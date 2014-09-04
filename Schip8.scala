@@ -23,7 +23,7 @@ object Schip8 {
     /* Load program into memory */
     val rom = if (args.size > 0) args(0) else "roms/MAZE"
     print("Loading ROM...")
-    val program = loadRom("roms/MAZE")
+    val program = loadRom(rom)
     val memory = VM.loadProgram(program)
     println("DONE!")
 
